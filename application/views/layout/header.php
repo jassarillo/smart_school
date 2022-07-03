@@ -143,11 +143,11 @@ if ($this->config->item('SSLK') == "") {
                             <div class="navbar-custom-menu">
                                 <?php if($this->rbac->hasPrivilege('language_switcher','can_view')){
                                     ?>
-                                   <!-- <div class="langdiv"><select class="languageselectpicker" onchange="set_languages(this.value)"  type="text" id="languageSwitcher" >
+                                    <div class="langdiv"><select class="languageselectpicker" onchange="set_languages(this.value)"  type="text" id="languageSwitcher" >
                                           
                                            <?php $this->load->view('admin/language/languageSwitcher')?>
 
-                                        </select></div> -->
+                                        </select></div> 
                                     <?php
                                }?>
                                 

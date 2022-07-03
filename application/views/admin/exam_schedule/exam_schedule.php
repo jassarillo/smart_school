@@ -72,7 +72,7 @@
                                     <tr>
                                         <th><?php echo $this->lang->line('subject') ?></th>
                                         <th><?php echo $this->lang->line('date') . " " . $this->lang->line('from') ?></th>
-                                        <th><?php echo $this->lang->line('time'). " de Inicio"; ?></th>
+                                        <th><?php echo $this->lang->line('start') . " " . $this->lang->line('time'); ?></th>
                                         <th><?php echo $this->lang->line('duration') ?></th>
                                         <th><?php echo $this->lang->line('room') ?></th>
                                         <th><?php echo $this->lang->line('marks') . " (" . $this->lang->line('max') . ".)"; ?></th>

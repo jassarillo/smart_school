@@ -20,7 +20,7 @@
                 <div class="col-md-4">    
                     <div class="box box-primary">
                         <div class="box-header with-border">
-                            <h3 class="box-title"><?php echo "Añadir Tipo licencia"; ?></h3>
+                            <h3 class="box-title"><?php echo $title; ?></h3>
                         </div> 
                         <form id="form1" action="<?php echo site_url('admin/leavetypes/createLeaveType') ?>"  id="employeeform" name="employeeform" method="post" accept-charset="utf-8"  enctype="multipart/form-data">
                             <div class="box-body">

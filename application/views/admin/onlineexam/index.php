@@ -171,7 +171,7 @@ function findOption($questionOpt, $find)
                 </div>
                 <div class="col-sm-4">
                       <div class="form-group">
-                        <label for="attempt"><?php echo  $this->lang->line('percentage') ?></label><small class="req"> *</small>
+                        <label for="attempt"><?php echo $this->lang->line('passing') . " " . $this->lang->line('percentage') ?></label><small class="req"> *</small>
                         <input type="number" min="1" max="100" class="form-control" id="passing_percentage" name="passing_percentage">
                         <span class="text text-danger passing_percentage_error"></span>
                     </div>

@@ -49,7 +49,8 @@ class Class_model extends MY_Model {
             }
         } else {
 
-            $this->db->select()->from('classes');
+            $this->db->select()->from('classes')
+            ->where('classes.nivel_academico_clave', NIVEL_EDUCATIVO_CLAVE);
             if ($id != null) {
                 $this->db->where('id', $id);
             } else {
@@ -123,7 +124,8 @@ class Class_model extends MY_Model {
     }
 
     public function class_exists($str) {
-
+        return true;
+        
         $class = $this->security->xss_clean($str);
         $res = $this->check_data_exists($class);
 

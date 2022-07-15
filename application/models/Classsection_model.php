@@ -39,6 +39,7 @@ class Classsection_model extends MY_Model {
 
         $this->db->trans_start(); # Starting Transaction
         $this->db->trans_strict(false); # See Note 01. If you wish can remove as well
+        $data['nivel_academico_clave'] = NIVEL_EDUCATIVO_CLAVE;
         //=======================Code Start===========================
         if (isset($data['id'])) {
             $this->db->where('id', $data['id']);
@@ -124,7 +125,8 @@ class Classsection_model extends MY_Model {
     }
 
     public function getByID($id = null) {
-        $this->db->select('classes.*')->from('classes');
+        $this->db->select('classes.*')->from('classes')
+        ->where('classes.nivel_academico_clave', NIVEL_EDUCATIVO_CLAVE);
 
         if ($id != null) {
             $this->db->where('classes.id', $id);

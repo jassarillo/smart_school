@@ -615,6 +615,7 @@ class Student_model extends MY_Model
         $this->datatables->group_end();
         $this->datatables->where('student_session.session_id', $this->current_session);
         $this->datatables->where('students.is_active', 'yes');
+        $this->datatables->where('classes.nivel_academico_clave', NIVEL_EDUCATIVO_CLAVE);
         $this->datatables->searchable('students.admission_no,students.firstname,students.middlename,students.lastname,classes.class,students.father_name,students.dob,students.gender,categories.category,students.mobileno'. $field_variable);
         $this->datatables->orderable('students.admission_no,students.firstname,classes.class,students.father_name,dob,students.gender,categories.category,students.mobileno'.$field_name);
         $this->datatables->sort('students.id');

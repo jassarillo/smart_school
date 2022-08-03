@@ -126,7 +126,7 @@ if ($this->config->item('SSLK') == "") {
                     </a>
                     <div class="col-lg-5 col-md-3 col-sm-2 col-xs-4">   
                         <span href="#" class="sidebar-session">
-                            <?php echo $this->setting_model->getCurrentSchoolName(); ?>
+                            <?php echo $this->setting_model->getCurrentSchoolName(); ?> - <?php echo NIVEL_EDUCATIVO_CLAVE ?>
                         </span>
                     </div>   
                     <div class="col-lg-7 col-md-9 col-sm-10 col-xs-8">

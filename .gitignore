@@ -1,4 +1,4 @@
 index.php
 .htaccess
-application/config.php
-application/database.php
+application/config/config.php
+application/config/database.php
